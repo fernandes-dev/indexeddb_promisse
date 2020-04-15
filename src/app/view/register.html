@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" theme-color" content="#4B0082">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="/static/js/idb.js"></script>
+    <script defer src="/static/js/db.js"></script>
+    <script defer src="/static/js/axios.min.js"></script>
+    <script defer src="/static/js/index.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="text-danger" href="/">Voltar</a>
+    </nav>
+    <div class="container mt-4">
+        <div class="card p-4 shadow">
+            <p> Cadastrar Hotel</p>
+            <form id="register_form">
+                <div class="form-group">
+                    <input id="name" name="name" type="text" placeholder="Nome..." class='form-control' required>
+                </div>
+                <div class="form-group">
+                    <input id="city" name="city" type="text" placeholder="Cidade..." class='form-control' required>
+                </div>
+                <div class="form-group">
+                    <input id="price" name="price" type="text" placeholder="Valor..." class='form-control' required>
+                </div>
+                <div class="form-group">
+                </div>
+                <button id="register" class="btn btn-block btn-warning" type="submit">Salvar</button>
+            </form>
+        </div>
+  
+
+    <div id="status"></div>
+    <div id="allHoteis">
+        <div id="allName"></div>
+        <div id="allCity"></div>
+        <div id="allPrice"></div>
+    </div>
+    <button id="list_all" class='btn btn-block btn-info'>Listar Hotéis</button>
+</div>
+</body>
+
+</html>
